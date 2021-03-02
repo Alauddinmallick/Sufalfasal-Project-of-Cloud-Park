@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body{
+	background-image:url('image/image4.jpg');
+  text-decoration: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+h1{
+	font-size:40px;
+	color:green;
+}
+.table{
+	border:gray;
+	width:30%;
+  margin-left:35%;
+  
+}
+td{
+	background-color:rgba(255, 255, 255, 0.253);
+	color:white;
+	text-align:left;
+	width:15%;
+	padding:-1%;
+}
+th{
+	background-color:rgba(46, 139, 86, 0.226);
+	color:white;
+	text-align:left;
+	width:15%;
+	padding:0%;	
+}
+
+</style>
+<title>Signup</title>
+</head>
+<body>
+<h1>PLEASE FILL THE FORM</h1>
+<form action="connection_signup_form.php" method="POST" enctype="multipart/form-data">
+<table class="table">
+     <tr><td><p>First Name : <th><input type="text"name="firstname"required placeholder="user name"></p></td></th></tr>
+     <tr><td><p>Last Name : <th><input type="text"name="lastname"required placeholder="your surname"></p></td></tr>
+     <tr><td><p>User ID : <th><input type ="email"name="userid"required placeholder="your user id"></p></td></tr>
+     <tr><td><p>Password : <th><input type="password"name="password"required placeholder="*********"></p></td></tr>
+     <tr><td><p>Confirm Password : <th><input type="password"name="confmpassword"required placeholder="*********"></p></th></td></tr>
+     <tr><td><p>Date of birth : <th><input type="date"name="dateofbirth"required placeholder="date of birth"></p></td></tr>
+     <tr><td><p>Gender : <th>Male<input type="radio"name="gender"value="male">Female<input type="radio"name="gender"value="female"></p></td></tr>
+     <tr><td><p>Language known:<th> Englis<input type="checkbox"name="language"value="english">Hindi<input type="checkbox"name="language"value="hindi">Bengali<input type="checkbox"name="language"value="bengali"></td></tr>
+     <tr><td><p>Country: <th><select></p>
+    <option name="contry">America</option>
+    <option name="contry">Bangladesh</option>
+    <option name="contry">India</option>
+    </select><br></td></tr>
+	 <tr><td>Upload your Photo :
+   <th><input type="file" name="img" id="img" value="Upload image" accept="image/*">
+  
+     <tr><td colspan="2"><p style="margin-left:35%;"><input style="font-size:20px;" type="submit"value="Submit"><input style="font-size:20px;" type="reset"value="Reset">
+    <hr></p></th></tr>
+	</table>
+</form>
+
+</html>
